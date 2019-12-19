@@ -1,0 +1,293 @@
+{
+    "id": "48d269b68de2d6134e560177636b77bd",
+    "name": "SYNQ Video",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "39626f78363ca7df6b165732f78112c7",
+            "name": "Create a new video, optionally setting some metadata fields.",
+            "url": "httpsapi.synq.fm\/v1\/video\/create",
+            "description": "Create a new video, optionally setting some metadata fields. You may optionally set some of the metadata associated with the video. Only fields inside the \"userdata\" field can be set.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api_key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userdata",
+                    "description": "Additional metadata that will be associated with the video",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "rawModeData": ""
+        },
+        {
+            "id": "a28d59dea80807efee8f6ef5bf9525d4",
+            "name": "Return details about a video.",
+            "url": "httpsapi.synq.fm\/v1\/video\/details",
+            "description": "Return details about a video. You may optionally request that only some of the metadata fields are returned.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api_key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "video_id",
+                    "description": "ID of the video to retrieve the metadata from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "rawModeData": ""
+        },
+        {
+            "id": "99801e77a6e8d66ec7a319b911446779",
+            "name": "Perform a JavaScript query to return video objects matching any desired criteria.",
+            "url": "httpsapi.synq.fm\/v1\/video\/query",
+            "description": "Find videos matching any criteria, by running a JavaScript function over each video object. A detailed tutorial on how to use this functionality is available on the [documentation page](https:\/\/www.synq.fm\/queries-video-api\/).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api_key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "JavaScript code to be run over each video object, to determine what should be returend.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "rawModeData": ""
+        },
+        {
+            "id": "825e6373c6a98ea02d86290cfceb6907",
+            "name": "Returns urls for streaming.",
+            "url": "httpsapi.synq.fm\/v1\/video\/stream",
+            "description": "Returns a stream url that you can stream to from your broadcasting software, and a playback url people can use to watch the stream.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api_key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "video_id",
+                    "description": "ID of the video to retrieve the metadata from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "rawModeData": ""
+        },
+        {
+            "id": "2fedf8c0307a8c1d059cdd031459730c",
+            "name": "Update a video's metadata.",
+            "url": "httpsapi.synq.fm\/v1\/video\/update",
+            "description": "Update a video's metadata through JavaScript code. Only fields inside the \"userdata\" object can be set.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api_key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "video_id",
+                    "description": "ID of the video to retrieve the metadata from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "JavaScript code to execute on the video object.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "rawModeData": ""
+        },
+        {
+            "id": "0fd63585c066e56c8ae7377cefda329f",
+            "name": "Return parameters needed for uploading a video file.",
+            "url": "httpsapi.synq.fm\/v1\/video\/upload",
+            "description": "Return parameters needed for uploading a video file to Amazon Simple Storage Service. See http:\/\/docs.aws.amazon.com\/AmazonS3\/latest\/API\/sigv4-post-example.html as well as the language-specific code-examples.\n#### *Example request*\n```shell\ncurl -s https:\/\/api.synq.fm\/v1\/video\/upload \\\n  -F api_key=${SYNQ_API_KEY} \\\n  -F video_id=2d81c30ce62f4dfdb501dbca96c7ae56\n```\n\n#### *Example response*\n```json\n{\n  \"action\": \"https:\/\/synqfm.s3.amazonaws.com\/\",\n  \"AWSAccessKeyId\": \"AKIAIP77Y7MMX3ITZMFA\",\n  \"C",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api_key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "video_id",
+                    "description": "ID of the video to retrieve the metadata from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "rawModeData": ""
+        },
+        {
+            "id": "5531f906960c266a4e77bcfcf188accc",
+            "name": "Return embeddable url to an uploader widget",
+            "url": "httpsapi.synq.fm\/v1\/video\/uploader",
+            "description": "Returns an embeddable url, that contains an uploader widget that allows you to easily upload any mp4. Great way to simplify the uploading process for end users.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "api_key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "video_id",
+                    "description": "ID of the video to retrieve the metadata from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeout",
+                    "description": "How long the uploader widget works for. Anything from '30 minutes' to '2 days'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "rawModeData": ""
+        }
+    ]
+}
