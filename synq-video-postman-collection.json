@@ -1,5 +1,5 @@
 {
-    "id": "48d269b68de2d6134e560177636b77bd",
+    "id": "28d7e352d33096ebe26271086578fd77",
     "name": "SYNQ Video",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "39626f78363ca7df6b165732f78112c7",
+            "id": "acf9cf4057ba6a4bb59af07d5ef242e6",
             "name": "Create a new video, optionally setting some metadata fields.",
             "url": "httpsapi.synq.fm\/v1\/video\/create",
             "description": "Create a new video, optionally setting some metadata fields. You may optionally set some of the metadata associated with the video. Only fields inside the \"userdata\" field can be set.",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "collectionId": "28d7e352d33096ebe26271086578fd77",
             "rawModeData": ""
         },
         {
-            "id": "a28d59dea80807efee8f6ef5bf9525d4",
+            "id": "1478b0a1bc0d4a95fed7e299638bd977",
             "name": "Return details about a video.",
             "url": "httpsapi.synq.fm\/v1\/video\/details",
             "description": "Return details about a video. You may optionally request that only some of the metadata fields are returned.",
@@ -82,11 +82,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "collectionId": "28d7e352d33096ebe26271086578fd77",
             "rawModeData": ""
         },
         {
-            "id": "99801e77a6e8d66ec7a319b911446779",
+            "id": "19d7326702bf9107b2c3a04458eaf8b5",
             "name": "Perform a JavaScript query to return video objects matching any desired criteria.",
             "url": "httpsapi.synq.fm\/v1\/video\/query",
             "description": "Find videos matching any criteria, by running a JavaScript function over each video object. A detailed tutorial on how to use this functionality is available on the [documentation page](https:\/\/www.synq.fm\/queries-video-api\/).",
@@ -120,11 +120,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "collectionId": "28d7e352d33096ebe26271086578fd77",
             "rawModeData": ""
         },
         {
-            "id": "825e6373c6a98ea02d86290cfceb6907",
+            "id": "1fbcf6758588c42c0ff08fb83a982c46",
             "name": "Returns urls for streaming.",
             "url": "httpsapi.synq.fm\/v1\/video\/stream",
             "description": "Returns a stream url that you can stream to from your broadcasting software, and a playback url people can use to watch the stream.",
@@ -158,11 +158,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "collectionId": "28d7e352d33096ebe26271086578fd77",
             "rawModeData": ""
         },
         {
-            "id": "2fedf8c0307a8c1d059cdd031459730c",
+            "id": "3b8e574d7c30f2e3e6e4050f332451e1",
             "name": "Update a video's metadata.",
             "url": "httpsapi.synq.fm\/v1\/video\/update",
             "description": "Update a video's metadata through JavaScript code. Only fields inside the \"userdata\" object can be set.",
@@ -203,11 +203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "collectionId": "28d7e352d33096ebe26271086578fd77",
             "rawModeData": ""
         },
         {
-            "id": "0fd63585c066e56c8ae7377cefda329f",
+            "id": "51779a566c7fae9c554471983015c09e",
             "name": "Return parameters needed for uploading a video file.",
             "url": "httpsapi.synq.fm\/v1\/video\/upload",
             "description": "Return parameters needed for uploading a video file to Amazon Simple Storage Service. See http:\/\/docs.aws.amazon.com\/AmazonS3\/latest\/API\/sigv4-post-example.html as well as the language-specific code-examples.\n#### *Example request*\n```shell\ncurl -s https:\/\/api.synq.fm\/v1\/video\/upload \\\n  -F api_key=${SYNQ_API_KEY} \\\n  -F video_id=2d81c30ce62f4dfdb501dbca96c7ae56\n```\n\n#### *Example response*\n```json\n{\n  \"action\": \"https:\/\/synqfm.s3.amazonaws.com\/\",\n  \"AWSAccessKeyId\": \"AKIAIP77Y7MMX3ITZMFA\",\n  \"C",
@@ -241,11 +241,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "collectionId": "28d7e352d33096ebe26271086578fd77",
             "rawModeData": ""
         },
         {
-            "id": "5531f906960c266a4e77bcfcf188accc",
+            "id": "e6a662d9a54f7d14a4be8edda1d7a829",
             "name": "Return embeddable url to an uploader widget",
             "url": "httpsapi.synq.fm\/v1\/video\/uploader",
             "description": "Returns an embeddable url, that contains an uploader widget that allows you to easily upload any mp4. Great way to simplify the uploading process for end users.",
@@ -286,7 +286,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "48d269b68de2d6134e560177636b77bd",
+            "collectionId": "28d7e352d33096ebe26271086578fd77",
             "rawModeData": ""
         }
     ]
